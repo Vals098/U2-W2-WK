@@ -1,0 +1,39 @@
+body {
+  background-color: #141414;
+  color: white;
+  font-size: 12px;
+}
+
+/* to avoid using sass only to customize the header link colors, I am using a strong selector */
+.navbar .nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+}
+
+.logo {
+  max-width: 130px;
+}
+
+.avatar {
+  max-width: 40px;
+}
+
+.carousel img {
+  transition: transform 0.3s;
+}
+
+.carousel img:hover {
+  transform: scale(1.1);
+}
+
+.carousel-item .row div {
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin: 1em;
+}
