@@ -1,49 +1,15 @@
+/* GENERAL */
+
 body {
   background-color: #141414;
-  color: #e6e6e6;
   font-size: 12px;
 }
 
-/* to avoid using sass only to customize the header link colors, I am using a strong selector */
-.navbar .nav-link{
-  color:#e6e6e6;
-}
-
-.nav-link:hover, .footer-li:hover{
-  font-weight: 700;
-}
-
- .icon:hover{
+.icon:hover {
   transform: scale(1.1);
   cursor: pointer;
- }
-
-
-.logo {
-  max-width: 130px;
-  cursor: pointer;
 }
 
-.avatar {
-  max-width: 40px;
-}
-
-.carousel img {
-  transition: transform 0.3s;
-}
-
-.carousel img:hover {
-  transform: scale(1.1);
-}
-
-.carousel-item .row div {
-  padding: 0;
-}
-
-h2 {
-  font-size: 1.3em;
-  margin: 1em;
-}
 /* BUTTONS */
 /* .genres{
   background-color: #141414;
@@ -62,4 +28,75 @@ h2 {
 .btn-netflix:hover {
   background-color: #e6e6e6;
   color: #141414;
+}
+/* HEADER */
+header {
+  color: #e6e6e6;
+}
+
+.navbar .nav-link {
+  color: #e6e6e6;
+}
+
+.nav-link:hover,
+.footer-li:hover {
+  font-weight: 700;
+}
+
+.logo {
+  max-width: 130px;
+  cursor: pointer;
+}
+
+.avatar {
+  max-width: 40px;
+}
+
+.hamburger-icon {
+  color: white;
+}
+
+/* MAIN */
+main {
+  color: #e6e6e6;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin: 1em;
+}
+
+.carousel img {
+  transition: transform 0.3s;
+}
+
+.carousel img:hover {
+  transform: scale(1.1);
+}
+
+.carousel-item .row div {
+  padding: 0;
+}
+
+/* profile page specific */
+.input-style {
+  background-color: #808080;
+  border-radius: 0;
+  color: #e6e6e6;
+}
+
+.select-style {
+  background-color: #141414;
+  border-radius: 0;
+  color: #e6e6e6;
+}
+
+.select-style:hover {
+  background-color: #e6e6e6;
+  color: #141414;
+}
+
+/* FOOTER */
+footer {
+  color: #808080;
 }
