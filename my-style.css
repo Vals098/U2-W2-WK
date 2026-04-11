@@ -1,20 +1,27 @@
 body {
   background-color: #141414;
-  color: white;
+  color: #e6e6e6;
   font-size: 12px;
 }
 
 /* to avoid using sass only to customize the header link colors, I am using a strong selector */
-.navbar .nav-link {
-  color: white;
+.navbar .nav-link{
+  color:#e6e6e6;
 }
 
-.nav-link:hover {
+.nav-link:hover, .footer-li:hover{
   font-weight: 700;
 }
 
+ .icon:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+ }
+
+
 .logo {
   max-width: 130px;
+  cursor: pointer;
 }
 
 .avatar {
@@ -36,4 +43,23 @@ body {
 h2 {
   font-size: 1.3em;
   margin: 1em;
+}
+/* BUTTONS */
+/* .genres{
+  background-color: #141414;
+  color: #e6e6e6;
+} */
+
+.btn-netflix {
+  background-color: transparent;
+  border: 1px solid #777;
+  color: #e6e6e6;
+  font-size: 0.9rem;
+  padding: 5px 12px;
+  border-radius: 0;
+}
+
+.btn-netflix:hover {
+  background-color: #e6e6e6;
+  color: #141414;
 }
