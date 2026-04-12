@@ -17,11 +17,13 @@
       <!-- NAVBAR START -->
       <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
-          <img
-            src="../Netflix-assets/assets/netflix_logo.png"
-            alt="logo"
-            class="logo"
-          />
+          <a href="../HomePage/index.html">
+            <img
+              src="../Netflix-assets/assets/netflix_logo.png"
+              alt="logo"
+              class="logo"
+            />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -36,7 +38,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../HomePage/index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">TV Shows</a>
@@ -50,10 +57,19 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">My List</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../ProfilePage/profile.html"
+                  >My Profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../SettingsPage/settings.html"
+                  >Settings</a
+                >
+              </li>
             </ul>
-
             <ul
-              class="navbar-nav d-flex justify-content-end align-items-center"
+              class="navbar-nav d-flex justify-content-end align-items-center d-none d-md-flex"
             >
               <li>
                 <svg
@@ -89,9 +105,7 @@
 
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="../HomePage/index.html"
+                    <a class="dropdown-item" href="../HomePage/index.html"
                       >Homepage</a
                     >
                   </li>
@@ -111,7 +125,7 @@
     </header>
     <main class="settings-main">
       <!-- same structure as profile page with centered content row -->
-      <div class="container mt-md-5 p-5">
+      <div class="container mt-md-3 p-5">
         <div class="row justify-content-center">
           <div class="col">
             <!-- contents -->
@@ -138,9 +152,11 @@
 
                   <!-- RIGHT -->
                   <div class="text-end">
-                    <a href="#" class="text-info">Change account email</a><br />
-                    <a href="#" class="text-info">Change password</a><br />
-                    <a href="#" class="text-info">Change phone number</a>
+                    <p>
+                      <a href="#">Change account email</a>
+                    </p>
+                    <p><a href="#">Change password</a></p>
+                    <p><a href="#">Change phone number</a></p>
                   </div>
                 </div>
                 <!-- SECOND LINE-->
@@ -168,8 +184,8 @@
 
                   <!-- RIGHT -->
                   <div class="text-end">
-                    <a href="#" class="text-info">Update payment info</a><br />
-                    <a href="#" class="text-info">Billing details</a>
+                    <p><a href="#">Update payment info</a></p>
+                    <p><a href="#">Billing details</a></p>
                   </div>
                 </div>
                 <!-- THIRD LINE-->
@@ -179,11 +195,12 @@
 
                   <!-- RIGHT -->
                   <div class="text-end">
-                    <a href="#" class="text-info"
-                      >Redeem gift card or promo code</a
-                    ><br />
-                    <a href="#" class="text-info">Where to buy gift cards</a
-                    ><br />
+                    <p>
+                      <a href="#">Redeem gift card or promo code</a>
+                    </p>
+                    <p>
+                      <a href="#">Where to buy gift cards</a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -205,7 +222,7 @@
 
                   <!-- RIGHT -->
                   <div class="text-end">
-                    <a href="#" class="text-info">Change plan</a>
+                    <p><a href="#">Change plan</a></p>
                   </div>
                 </div>
               </div>
@@ -220,15 +237,20 @@
                 <div class="d-flex justify-content-between align-items-start">
                   <!-- LEFT -->
                   <div>
-                    <a href="#" class="text-info">Parental controls</a><br />
-                    <a href="#" class="text-info">Test participation</a><br />
-                    <a href="#" class="text-info">Manage download devices</a
-                    ><br />
-                    <a href="#" class="text-info">Activate a device</a><br />
-                    <a href="#" class="text-info"
-                      >Recent device streaming activity</a
-                    ><br />
-                    <a href="#" class="text-info">Sign out of all devices</a>
+                    <p><a href="#">Parental controls</a></p>
+                    <p><a href="#">Test participation</a></p>
+                    <p>
+                      <a href="#">Manage download devices</a>
+                    </p>
+
+                    <p><a href="#">Activate a device</a></p>
+                    <p><a href="#"></a></p>
+                    <p>
+                      <a href="#">Recent device streaming activity</a>
+                    </p>
+                    <p>
+                      <a href="#">Sign out of all devices</a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -243,29 +265,30 @@
                 <div class="d-flex justify-content-between align-items-start">
                   <!-- LEFT -->
                   <div>
-                    <img
-                      src="../Netflix-assets/assets/avatar.png"
-                      alt="avatar"
-                      class="avatar-settings"
-                    />
-                    <p class="d-inline-block mx-2 text-dark">Strive Student</p><br>
-                    <a href="#" class="text-info">Language</a><br>
-                    <a href="#" class="text-info">Playback settings</a><br>
-                    <a href="#" class="text-info">Subtitle appearance</a>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../Netflix-assets/assets/avatar.png"
+                        alt="avatar"
+                        class="avatar-settings"
+                      />
+                      <p class="ms-2 text-dark">Strive Student</p>
+                    </div>
+                    <p><a href="#">Language</a></p>
+                    <p><a href="#">Playback settings</a></p>
+                    <p><a href="#">Subtitle appearance</a></p>
                   </div>
 
                   <!-- RIGHT -->
                   <div class="text-end">
-                    <a href="#" class="text-info">Manage profiles</a><br>
-                    <a href="#" class="text-info">Add profile email</a>
+                    <p><a href="#">Manage profiles</a></p>
+                    <p><a href="#">Add profile email</a></p>
                   </div>
                 </div>
-                  <!-- MIDDLE
+                <!-- MIDDLE
                   <div class="text-end">
-                    <a href="#" class="text-info">Viewing activity</a><br>
-                    <a href="#" class="text-info">Ratings</a>
+                    <a href="#">Viewing activity</a><br>
+                    <a href="#">Ratings</a>
                   </div> -->
-                </div>
               </div>
             </div>
           </div>

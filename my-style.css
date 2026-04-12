@@ -16,6 +16,23 @@ h1 {
   letter-spacing: 1.5px;
 }
 
+h2 {
+  font-size: 1.3em;
+  margin: 1em;
+}
+
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #969696;
+}
+
+p{
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
 /* BUTTONS */
 /* .genres{
   background-color: #141414;
@@ -68,10 +85,6 @@ header {
   color: #e6e6e6;
 }
 
-h2 {
-  font-size: 1.3em;
-  margin: 1em;
-}
 
 .carousel img {
   transition: transform 0.3s;
@@ -100,12 +113,6 @@ footer {
   border-bottom: 2px solid #333333;
 }
 
-h3 {
-  font-size: 1.5em;
-  font-weight: 300;
-  margin-bottom: 1em;
-  color: #969696;
-}
 
 .input-style {
   background-color: #808080;
@@ -211,8 +218,13 @@ h3 {
   margin-left: 8px;
 }
 
-a {
+.settings-main a {
+  color: #0d6efd;
   text-decoration: none;
+}
+
+.settings-main a:hover {
+  color: #71aee1;
 }
 
 .avatar-settings {
@@ -222,4 +234,9 @@ a {
 .settings-button{
   border: none;
   padding: 8px 30px;
+}
+
+.settings-button:hover{
+  background-color: #333333;
+  color: white;
 }

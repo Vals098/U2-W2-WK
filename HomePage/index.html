@@ -17,11 +17,13 @@
       <!-- NAVBAR START -->
       <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
-          <img
-            src="../Netflix-assets/assets/netflix_logo.png"
-            alt="logo"
-            class="logo"
-          />
+          <a href="../HomePage/index.html">
+            <img
+              src="../Netflix-assets/assets/netflix_logo.png"
+              alt="logo"
+              class="logo"
+            />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -50,10 +52,20 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">My List</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../ProfilePage/profile.html"
+                  >My Profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../SettingsPage/settings.html"
+                  >Settings</a
+                >
+              </li>
             </ul>
 
             <ul
-              class="navbar-nav d-flex justify-content-end align-items-center"
+              class="navbar-nav d-flex justify-content-end align-items-center d-none d-md-flex"
             >
               <li>
                 <svg
@@ -102,8 +114,18 @@
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="../ProfilePage/profile.html">Profile</a></li>
-                  <li><a class="dropdown-item" href="../SettingsPage/settings.html">Settings</a></li>
+                  <li>
+                    <a class="dropdown-item" href="../ProfilePage/profile.html"
+                      >Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../SettingsPage/settings.html"
+                      >Settings</a
+                    >
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                 </ul>
               </li>
@@ -116,7 +138,7 @@
     <main class="homepage-main p-4">
       <div class="d-flex justify-content-between">
         <!-- DROPDOWN AND H1 START -->
-        <div class="genres d-flex align-content-center">
+        <div class="genres d-flex align-items-center">
           <h1>TV Shows</h1>
           <div class="dropdown mx-4">
             <button
@@ -769,7 +791,9 @@
         </div>
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <button class="btn btn-netflix">Service Code</button>
-          <p class="py-2">&copy; 1997–2019 Netflix, Inc. (i-0d0Ofcda2tdf9c0de)</p>
+          <p class="py-2">
+            &copy; 1997–2019 Netflix, Inc. (i-0d0Ofcda2tdf9c0de)
+          </p>
         </div>
       </div>
     </footer>
