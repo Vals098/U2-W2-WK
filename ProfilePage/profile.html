@@ -27,34 +27,107 @@
       <!-- NAVBAR END -->
     </header>
     <main>
-      <h1>Edit Profile</h1>
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-3">
-              <img src="../Netflix-assets/assets/avatar.png" alt="avatar" />
+      <!-- Container -->
+      <div class="container mt-md-5 p-5">
+        <!-- ROW centered -->
+        <div class="row justify-content-center">
+          <!-- COL CONTENTS -->
+          <div class="col-12 col-md-10 col-lg-8 mx-auto">
+            <!-- First row h1 -->
+            <div class="row">
+              <div class="col">
+                <h1 class="text-center text-md-start">Edit Profile</h1>
+              </div>
             </div>
-            <div class="col">
-              <form>
-                <input
-                  type="text"
-                  class="form-control input-style"
-                  value="Strive Student"
+
+            <!-- Second row form and avatar -->
+            <div
+              class="row second-row py-3 justify-content-center text-center text-md-start"
+            >
+              <!-- col AVATAR -->
+              <div class="col-12 col-md-3 px-1 mb-3 mb-md-0">
+                <img
+                  src="../Netflix-assets/assets/avatar.png"
+                  alt="avatar"
+                  class="img-fluid"
                 />
-                <label for="language" class="mb-2">Language:</label>
-                <select id="language" class="form-select border-secondary select-style">
-                  <option>English</option>
-                  <option>Spanish</option>
-                  <option>French</option>
-                  <option>German</option>
-                  <option>Italian</option>
-                  <option>Japanese</option>
-                </select>
-              </form>
+              </div>
+
+              <!--col FORM -->
+              <div class="col-12 col-md-9">
+                <form
+                  class="d-flex flex-column align-items-center align-items-md-start gap-3 profile-form"
+                >
+                  <input
+                    type="text"
+                    class="form-control input-style text-center text-md-start"
+                    value="Strive Student"
+                  />
+                  <!-- language select -->
+
+                  <h3>Language:</h3>
+                  <select
+                    id="language"
+                    class="form-select border-secondary select-style"
+                  >
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>French</option>
+                    <option>German</option>
+                    <option>Italian</option>
+                    <option>Japanese</option>
+                  </select>
+                  <!-- maturity settings -->
+                  <div class="form-maturity">
+                    <h3>Maturity Settings:</h3>
+                    <button class="btn-maturity">ALL MATURITY RATINGS</button>
+                    <p>Show titles of all maturity ratings for this profile.</p>
+                    <button class="btn-netflix">EDIT</button>
+                  </div>
+                  <!-- autoplay section -->
+                   <h3>Autoplay controls</h3>
+                  <div class="form-check d-flex align-items-center">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="autoplay1"
+                    />
+                    <label class="form-check-label mx-2" for="autoplay1">
+                      Autoplay next episode in a series on all devices.
+                    </label>
+                  </div>
+
+                  <div class="form-check d-flex align-items-center">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="autoplay2"
+                    />
+                    <label class="form-check-label mx-2" for="autoplay2">
+                      Autoplay previews while browsing on all devices.
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Third row buttons -->
+            <div class="row mt-4 px-0">
+              <div class="col-12 col-md-2 offset-md-0 mb-2">
+                <button class="btn-netflix w-100">SAVE</button>
+              </div>
+
+              <div class="col-12 col-md-4 offset-md-0 mb-2">
+                <button class="btn-netflix w-100">CANCEL</button>
+              </div>
+
+              <div class="col-12 col-md-6 offset-md-0">
+                <button class="btn-netflix w-100">DELETE PROFILE</button>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
