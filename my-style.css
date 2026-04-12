@@ -64,7 +64,7 @@ header {
 }
 
 /* MAIN */
-main {
+.homepage-main, .profile-main {
   color: #e6e6e6;
 }
 
@@ -92,15 +92,15 @@ footer {
 
 /* profile page specific */
 .mx-auto {
-  max-width: 600px
+  max-width: 600px;
 }
 
-.second-row{
+.second-row {
   border-top: 2px solid #333333;
   border-bottom: 2px solid #333333;
 }
 
-h3{
+h3 {
   font-size: 1.5em;
   font-weight: 300;
   margin-bottom: 0;
@@ -174,4 +174,53 @@ h3{
   border-top: 2px solid #333333;
   border-bottom: 2px solid #333333;
   padding: 1em 0;
+}
+
+/* specific to settings page */
+.settings-body {
+  background-color: white;
+}
+
+.settings-header {
+  background-color: #141414;
+}
+
+.settings-main {
+  color: #dbdbdb;
+}
+
+.membership, .paypal{
+  border-top: 2px solid #dbdbdb;
+  border-bottom: 2px solid #dbdbdb;
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+.plan, .settings{
+  border-bottom: 2px solid #dbdbdb;
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+.ultra-hd {
+  border: 2px solid #666;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #666;
+  margin-left: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.avatar-settings {
+  width: 35px;
+}
+
+.settings-button{
+  border: none;
+  padding: 8px 30px;
+  margin: 1em 0;
 }

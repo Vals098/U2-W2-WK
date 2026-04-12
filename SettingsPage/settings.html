@@ -1,13 +1,281 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Settings Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../my-style.css" />
   </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <body class="settings-body">
+    <header class="settings-header">
+      <!-- NAVBAR START -->
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <img
+            src="../Netflix-assets/assets/netflix_logo.png"
+            alt="logo"
+            class="logo"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+
+            <ul
+              class="navbar-nav d-flex justify-content-end align-items-center"
+            >
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="icon bi bi-search mx-3"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">KIDS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="../Netflix-assets/assets/avatar.png"
+                    alt="avatar"
+                    class="avatar"
+                  />
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="../ProfilePage/profile.html"
+                      >Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../SettingsPage/settings.html"
+                      >Settings</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+    </header>
+    <main class="settings-main">
+      <!-- same structure as profile page with centered content row -->
+      <div class="container mt-md-5 p-5">
+        <div class="row justify-content-center">
+          <div class="col">
+            <!-- contents -->
+            <div class="row">
+              <!-- title -->
+              <h1 class="fs-2 text-dark">Account</h1>
+              <!-- membership & billing -->
+            </div>
+            <div class="row membership">
+              <div class="col-12 col-md-4 col-lg-3">
+                <h3>MEMBERSHIP & BILLING</h3>
+                <button class="settings-button">Cancel Membership</button>
+              </div>
+              <div class="col-12 col-md-8 col-lg-9">
+                <!-- FIRST LINE-->
+                <!-- display flex -->
+                <div class="d-flex justify-content-between align-items-start">
+                  <!-- LEFT -->
+                  <div>
+                    <p class="text-black">student@strive.school</p>
+                    <p>Password: ******</p>
+                    <p>Phone: 321 044 1279</p>
+                  </div>
+
+                  <!-- RIGHT -->
+                  <div class="text-end">
+                    <a href="#" class="text-info">Change account email</a><br />
+                    <a href="#" class="text-info">Change password</a><br />
+                    <a href="#" class="text-info">Change phone number</a>
+                  </div>
+                </div>
+                <!-- SECOND LINE-->
+                <div
+                  class="d-flex justify-content-between align-items-start paypal"
+                >
+                  <!-- LEFT -->
+                  <div>
+                    <p class="text-black">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-paypal"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z"
+                        />
+                      </svg>
+                      admin@strive.school
+                    </p>
+                  </div>
+
+                  <!-- RIGHT -->
+                  <div class="text-end">
+                    <a href="#" class="text-info">Update payment info</a><br />
+                    <a href="#" class="text-info">Billing details</a>
+                  </div>
+                </div>
+                <!-- THIRD LINE-->
+                <div class="d-flex justify-content-between align-items-start">
+                  <!-- LEFT -->
+                  <div></div>
+
+                  <!-- RIGHT -->
+                  <div class="text-end">
+                    <a href="#" class="text-info"
+                      >Redeem gift card or promo code</a
+                    ><br />
+                    <a href="#" class="text-info">Where to buy gift cards</a
+                    ><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- plan details -->
+            <div class="row plan">
+              <div class="col-12 col-md-4 col-lg-3">
+                <h3>PLAN DETAILS</h3>
+              </div>
+              <div class="col-12 col-md-8 col-lg-9">
+                <!-- display flex -->
+                <div class="d-flex justify-content-between align-items-start">
+                  <!-- LEFT -->
+                  <div>
+                    <p class="text-black">
+                      Premium <span class="ultra-hd">ULTRA HD</span>
+                    </p>
+                  </div>
+
+                  <!-- RIGHT -->
+                  <div class="text-end">
+                    <a href="#" class="text-info">Change plan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- settings -->
+            <div class="row settings">
+              <div class="col-12 col-md-4 col-lg-3">
+                <h3>SETTINGS</h3>
+              </div>
+              <div class="col-12 col-md-8 col-lg-9">
+                <!-- display flex -->
+                <div class="d-flex justify-content-between align-items-start">
+                  <!-- LEFT -->
+                  <div>
+                    <a href="#" class="text-info">Parental controls</a><br />
+                    <a href="#" class="text-info">Test participation</a><br />
+                    <a href="#" class="text-info">Manage download devices</a
+                    ><br />
+                    <a href="#" class="text-info">Activate a device</a><br />
+                    <a href="#" class="text-info"
+                      >Recent device streaming activity</a
+                    ><br />
+                    <a href="#" class="text-info">Sign out of all devices</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- my profile -->
+            <div class="row my-profile">
+              <div class="col-12 col-md-4 col-lg-3">
+                <h3>MY PROFILE</h3>
+              </div>
+              <div class="col-12 col-md-8 col-lg-9">
+                <!-- display flex -->
+                <div class="d-flex justify-content-between align-items-start">
+                  <!-- LEFT -->
+                  <div>
+                    <img
+                      src="../Netflix-assets/assets/avatar.png"
+                      alt="avatar"
+                      class="avatar-settings"
+                    />
+                    <p class="d-inline-block mx-2 text-dark">Strive Student</p><br>
+                    <a href="#" class="text-info">Language</a><br>
+                    <a href="#" class="text-info">Playback settings</a><br>
+                    <a href="#" class="text-info">Subtitle appearance</a>
+                  </div>
+
+                  <!-- RIGHT -->
+                  <div class="text-end">
+                    <a href="#" class="text-info">Manage profiles</a><br>
+                    <a href="#" class="text-info">Add profile email</a>
+                  </div>
+                </div>
+                  <!-- MIDDLE
+                  <div class="text-end">
+                    <a href="#" class="text-info">Viewing activity</a><br>
+                    <a href="#" class="text-info">Ratings</a>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
